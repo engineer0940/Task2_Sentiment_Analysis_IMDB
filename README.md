@@ -6,14 +6,14 @@ The IMDB dataset consists of 50,000 movie reviews, with 25,000 for positive and 
 
 # Preprocessing
 Preprocessing steps are crucial to prepare the textual data for the RNN model. The following preprocessing steps were performed:
-Cleaning of text: html tags removal, conversion to lower case, removal of stop words and punctuation and lemmatization steps are applied to clean the reviews text.
-Tokenization: Converting the text into sequences of integers where each integer represents a specific word in the vocabulary.
-Padding: Ensuring all sequences have the same length by padding shorter sequences with zeros and truncating longer sequences. This is necessary for efficient batch processing in RNNs.
-Vocabulary Size: The vocabulary size was set to 5,000, which means only the top 5,000 most frequent words in the dataset were considered. This helps in reducing the complexity and memory usage.
-Maxlen of Reviews: The maximum length of the reviews was set to 200 words. Reviews longer than this were truncated, and shorter reviews were padded with zeros.
+* Cleaning of text: html tags removal, conversion to lower case, removal of stop words and punctuation and lemmatization steps are applied to clean the reviews text.
+* Tokenization: Converting the text into sequences of integers where each integer represents a specific word in the vocabulary.
+* Padding: Ensuring all sequences have the same length by padding shorter sequences with zeros and truncating longer sequences. This is necessary for efficient batch processing in RNNs.
+* Vocabulary Size: The vocabulary size was set to 5,000, which means only the top 5,000 most frequent words in the dataset were considered. This helps in reducing the complexity and memory usage.
+* Maxlen of Reviews: The maximum length of the reviews was set to 200 words. Reviews longer than this were truncated, and shorter reviews were padded with zeros.
 Selection of Parameters
-Vocabulary Size: Set to 5,000 to include the most frequent words and reduce the size of the input space.
-Maxlen: Set to 200 to maintain a balance between including enough context and keeping the computation feasible.
+* Vocabulary Size: Set to 5,000 to include the most frequent words and reduce the size of the input space.
+* Max length of each review: Set to 200 to maintain a balance between including enough context and keeping the computation feasible.
 # Training, validation and Test datasets
 Training examples: 39200
 Validation: 800
